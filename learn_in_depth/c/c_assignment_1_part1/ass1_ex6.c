@@ -6,9 +6,10 @@ int main() {
   printf("Enter value of b: ");
   scanf("%d", &b);
 
-  temp = a;
-  a = b;
-  b = temp;
+  
+  a += b ;
+  b = a - b ;
+  a = a - b ;
   printf("After swapping, value of a: %d \n", a);
   printf("After swapping, value of b: %d \n", b);
 }
