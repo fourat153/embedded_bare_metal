@@ -1,0 +1,159 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: clean",
+			"command": "clean",
+			"problemMatcher": [],
+			"detail": "CMake template clean task"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc1",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass3_ex1.c",
+				"-o",
+				"${fileDirname}\\ass3_ex1.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc2",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass3_ex2.c",
+				"-o",
+				"${fileDirname}\\ass3_ex2.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc3",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass3_ex3.c",
+				"-o",
+				"${fileDirname}\\ass3_ex3.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc4",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass3_ex4.c",
+				"-o",
+				"${fileDirname}\\ass3_ex4.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc5",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass2_ex5.c",
+				"-o",
+				"${fileDirname}\\ass2_ex5.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc6",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass2_ex6.c",
+				"-o",
+				"${fileDirname}\\ass2_ex6.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "gcc7",
+			"command": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\ass2_ex7.c",
+				"-o",
+				"${fileDirname}\\ass2_ex7.exe",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/mm77/Downloads/Compressed/winlibs-x86_64-posix-seh-gcc-12.1.0-mingw-w64msvcrt-10.0.0-r1/mingw64/bin/gcc.exe"
+		}
+	]
+}
