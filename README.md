@@ -11,7 +11,7 @@
 
 - Unit 1: Getting started to learn AUTOSAR ![image](https://progress-bar.dev/100/?title=No_Assignments&color=bababa)
 - [Unit 2: AUTOSAR Architecture and Methodology](02_ASAR_Arch_and_Methodology) ![image](https://progress-bar.dev/100/)
-- [Unit 3: AUTOSAR SW Layer](03_ASAR_SW_Layer) ![image](https://progress-bar.dev/45/)
+- [Unit 3: AUTOSAR SW Layer](03_ASAR_SW_Layer) ![image](https://progress-bar.dev/20/)
 - More units are coming soon
 
 ---
