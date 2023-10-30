@@ -1,0 +1,370 @@
+20:04:48 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.list
+ 
+20:31:59 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.list
+ 
+21:06:38 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+make: *** [Src/subdir.mk:25: Src/syscalls.o] Error 1
+make: *** [Src/subdir.mk:25: Src/sysmem.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:06:52 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdawrf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+arm-none-eabi-gcc: error: unrecognized debug output level 'dawrf-2'
+make: *** [Src/subdir.mk:25: Src/syscalls.o] Error 1
+make: *** [Src/subdir.mk:25: Src/sysmem.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:44:47 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.list
+ 
+23:55:43 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.list
+ 
+Finished building: bllink_led.hex
+ 
+00:07:16 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:12:58 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:45:27: error: invalid type argument of '->' (have 'struct <anonymous>')
+   45 |                 port->pins->pin = 1;
+      |                           ^~
+../Src/main.c:48:23: error: invalid type argument of '->' (have 'struct <anonymous>')
+   48 |             port->pins->pin = 0;
+      |                       ^~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:16:15 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:16:47 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:19:04 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:19:10: fatal error: Platform_Types.h: No such file or directory
+   19 | #include "Platform_Types.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+00:22:57 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:29:58 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:30:21 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:30:40 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-size   bllink_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+00:32:38 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:34:21 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:34:52 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:35:10 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:35:34 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:38:59 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:39:42 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	bllink_led.elf
+Finished building: default.size.stdout
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+ 
+00:41:25 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    672	      8	   1568	   2248	    8c8	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+00:48:54 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 

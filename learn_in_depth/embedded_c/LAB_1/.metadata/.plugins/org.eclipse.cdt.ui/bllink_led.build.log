@@ -1,0 +1,20 @@
+00:48:54 **** Incremental Build of configuration Debug for project bllink_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "bllink_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\learn_depth\learn_in_depth\embedded_c\LAB_1\bllink_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="bllink_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: bllink_led.elf
+ 
+arm-none-eabi-size   bllink_led.elf 
+arm-none-eabi-objdump -h -S  bllink_led.elf  > "bllink_led.list"
+arm-none-eabi-objcopy  -O ihex  bllink_led.elf  "bllink_led.hex"
+   text	   data	    bss	    dec	    hex	filename
+    668	      8	   1568	   2244	    8c4	bllink_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: bllink_led.hex
+Finished building: bllink_led.list
+ 
+ 
+
+00:48:54 Build Finished. 0 errors, 0 warnings. (took 394ms)
+
