@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "obstaclav.h": "c",
+        "dc_motor.h": "c"
+    }
+}
