@@ -1,5 +1,3 @@
-
-
 #include "lcd.h"
 
 void LCD_INIT(void)
@@ -17,7 +15,7 @@ void LCD_INIT(void)
 	#endif
 	
 	#ifdef FOUR_BIT_MODE
-		LCD_WRITE_COMMAND(0x02); // As datasheet
+		LCD_WRITE_COMMAND(0x02); //  datasheet
 		LCD_WRITE_COMMAND(LCD_CMD_FUNCTION_4BIT_2LINES);
 	#endif
 	
