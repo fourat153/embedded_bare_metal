@@ -19,27 +19,6 @@
 #include <stdint.h>
 #include "../stm_driver/inc/Stm32_F103C6_EXTI_driver.h"
 #include "../stm_driver/inc/Stm32_F103C6_gpio_driver.h"
-enum cpu_access_level{ privileged ,  nonprivileged};
-
-void switch_cpu_access_level(enum cpu_access_level level )
-	{
-		switch (level)
-		{
-		case privileged :
-			__asm("mrs r3,CONTROL \n\t"   // Clear bit 0 in control register
-					"lsr r3,r3,#0x1 \n\t"
-					"lsl r3,r3,#0x1 \n\t"
-					"msr CONTROL,r3");
-			break;
-
-
-		case nonprivileged:
-			__asm("mrs r3,CONTROL \n\t"
-							"orr r3, r3, #0x1 \n\t"
-							"msr CONTROL,r3");
-
-		}
-	}
 
 
 uint16_t IRQ_Flag = 0;
@@ -47,8 +26,10 @@ int x = 0 ;
 void EXTI9_CallBack(void)
 {
 	IRQ_Flag = 1;
-	switch_cpu_access_level(nonprivileged);
-
+	__asm("nop\n \t nop");
+	__asm("MRS %0,IPSR"
+					: "=r"(x));
+	__asm("nop\n \t nop");
 }
 int out ;
 int in = 1 ;
@@ -66,11 +47,52 @@ int main(void)
 	EXTI_Cfg.TriggerCase = EXTI_Trigger_RISING;
 	EXTI_Cfg.P_IRQ_CallBack = EXTI9_CallBack;
 	EXTI_Cfg.IRQ_Enable = EXTI_IRQ_Enable;
+
 	MCAL_EXTI_GPIO_Init(&EXTI_Cfg);
 
+/*************lab1 non input or output************************/
+	__asm("nop\n \t nop");
+	__asm("nop\n \t nop");
+/*************lab2 output only  ************************/
+
+///////////////////////////////////////////////
+//  ass code : destination out : source input//
+///////////////////////////////////////////////
+
+	__asm("mov %0, #0xff"    // move 0xff to a register choosen by th cpu
+		:"=r" (out));        // compiler will generate a code store the result of 0xff into the adress of register that contain
+							// variable  out
+	__asm("nop\n \t nop");
+/*************lab3 ************************/
+	__asm("mov R0,%0 "    // move data in the register choosen by th cpu into the r0
+		:
+		: "r" (in));        // compiler will generate a code store the value  into the r0 of register into in variable
+
+	__asm("nop\n \t nop");
+
+/*************lab4 ************************/
+	out = 0  ;
+	in = 1 ;
+	in2 = 2 ;
+	__asm("nop\n \t nop");
+
+	__asm("add %0,%1,%2"
+		: "=r"(out)
+		: "r"(in) , "r"(in2));
+
+	__asm("nop\n \t nop");
+
+/*****************lab5********************/
+// Naming Conventional same as the last one
+		__asm("add %[Out0], %[in0], %[in1]"
+				:[Out0] "=r" (out)
+				 :[in0] "r" (in),
+				  [in1] "r" (in2));
+/****************lab6*******************/
+	__asm("MRS %[Cont],CONTROL"
+				:[Cont] "=r"(CONTROL_Regist_value));
 
 
-	switch_cpu_access_level(nonprivileged);
 
 	IRQ_Flag = 1;
 

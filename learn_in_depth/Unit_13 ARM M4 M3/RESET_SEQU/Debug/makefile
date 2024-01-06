@@ -35,34 +35,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := inline ass
+BUILD_ARTIFACT_NAME := reset
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-inline\ ass.elf \
+reset.elf \
 
 MAP_FILES += \
-inline\ ass.map \
+reset.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-inline\ ass.list \
+reset.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: inline\ ass.elf secondary-outputs
+main-build: reset.elf secondary-outputs
 
 # Tool invocations
-inline\ ass.elf inline\ ass.map: $(OBJS) $(USER_OBJS) C:\Users\mm77\Desktop\lean\embedded_diplom\learn_in_depth\Unit_13\ ARM\ M4\ M3\INLINE_ASSEMBLY\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "inline ass.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\lean\embedded_diplom\learn_in_depth\Unit_13 ARM M4 M3\INLINE_ASSEMBLY\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="inline ass.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+reset.elf reset.map: $(OBJS) $(USER_OBJS) C:\Users\mm77\Desktop\lean\embedded_diplom\learn_in_depth\Unit_13\ ARM\ M4\ M3\INLINE_ASSEMBLY\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "reset.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\mm77\Desktop\lean\embedded_diplom\learn_in_depth\Unit_13 ARM M4 M3\INLINE_ASSEMBLY\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="reset.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,14 +71,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-inline\ ass.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "inline ass.list"
+reset.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "reset.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout inline\ ass.elf inline\ ass.list inline\ ass.map inline\\ ass.elf
+	-$(RM) default.size.stdout reset.elf reset.list reset.map
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
