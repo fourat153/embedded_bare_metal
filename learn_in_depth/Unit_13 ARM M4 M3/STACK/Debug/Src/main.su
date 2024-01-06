@@ -1,0 +1,6 @@
+../Src/main.c:65:6:SVC_Handler	4	static,ignoring_inline_asm
+../Src/main.c:74:6:EXTI9_CallBack	4	static
+../Src/main.c:84:5:TaskA	24	static
+../Src/main.c:89:5:TaskB	24	static
+../Src/main.c:94:6:Main_OS	8	static,ignoring_inline_asm
+../Src/main.c:166:5:main	40	static

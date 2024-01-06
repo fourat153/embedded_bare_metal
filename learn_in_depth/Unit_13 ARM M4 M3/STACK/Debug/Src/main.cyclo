@@ -1,0 +1,6 @@
+../Src/main.c:65:6:SVC_Handler	1
+../Src/main.c:74:6:EXTI9_CallBack	3
+../Src/main.c:84:5:TaskA	1
+../Src/main.c:89:5:TaskB	1
+../Src/main.c:94:6:Main_OS	3
+../Src/main.c:166:5:main	1
