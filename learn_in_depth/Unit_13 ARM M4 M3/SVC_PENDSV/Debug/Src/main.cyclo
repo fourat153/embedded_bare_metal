@@ -1,0 +1,9 @@
+../Src/main.c:66:6:EXTI9_CallBack	3
+../Src/main.c:76:5:TaskA	1
+../Src/main.c:81:5:TaskB	1
+../Src/main.c:86:6:Main_OS	3
+../Src/main.c:157:6:OS_SVC_Services	5
+../Src/main.c:193:6:PendSV_Handler	1
+../Src/main.c:200:29:SVC_Handler	1
+../Src/main.c:212:5:OS_SVC_Set	5
+../Src/main.c:239:5:main	1
