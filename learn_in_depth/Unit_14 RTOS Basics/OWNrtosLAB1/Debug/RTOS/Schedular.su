@@ -1,0 +1,8 @@
+../RTOS/Schedular.c:36:6:OS_SVC_Services	24	static
+../RTOS/Schedular.c:67:5:OS_SVC_Set	16	static,ignoring_inline_asm
+../RTOS/Schedular.c:91:6:PendSV_Handler	4	static
+../RTOS/Schedular.c:97:6:MYRTOS_Create_MainStack	4	static
+../RTOS/Schedular.c:118:6:MyRTOS_Idle_Task	4	static,ignoring_inline_asm
+../RTOS/Schedular.c:128:16:MYRTOS_Init	16	static
+../RTOS/Schedular.c:157:6:MYRTOS_Create_Stack	24	static
+../RTOS/Schedular.c:195:16:MYRTOS_Create_Task	24	static
