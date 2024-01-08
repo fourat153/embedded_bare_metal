@@ -1,0 +1,11 @@
+../RTOS/../RTOS/inc/../../CMSIS_V5/core_cm3.h:1641:22:__NVIC_SetPriority	2
+../RTOS/../RTOS/inc/../../CMSIS_V5/core_cm3.h:1840:26:SysTick_Config	2
+../RTOS/CortexMxOS_Porting.c:5:6:HardFault_Handler	1
+../RTOS/CortexMxOS_Porting.c:10:6:MemManage_Handler	1
+../RTOS/CortexMxOS_Porting.c:15:6:BusFault_Handler	1
+../RTOS/CortexMxOS_Porting.c:20:6:UsageFault_Handler	1
+../RTOS/CortexMxOS_Porting.c:30:29:SVC_Handler	1
+../RTOS/CortexMxOS_Porting.c:41:6:Trigger_OS_PendSV	1
+../RTOS/CortexMxOS_Porting.c:48:6:HW_Init	1
+../RTOS/CortexMxOS_Porting.c:67:6:Start_Ticker	1
+../RTOS/CortexMxOS_Porting.c:81:6:SysTick_Handler	1
