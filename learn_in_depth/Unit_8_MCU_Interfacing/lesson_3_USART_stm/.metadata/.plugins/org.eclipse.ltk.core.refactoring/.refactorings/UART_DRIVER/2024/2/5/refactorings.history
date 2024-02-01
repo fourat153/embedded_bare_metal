@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UART_DRIVER/application_layer/test_uart_poling.h&apos; to &apos;test_uart_poling.c&apos;" description="Rename resource &apos;test_uart_poling.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="application_layer/test_uart_poling.h" name="test_uart_poling.c" stamp="1706776449735" updateReferences="true"/>
+</session>

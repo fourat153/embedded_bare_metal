@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UART_DRIVER/MCAL/inc/stm32f103c6tx_RCC2.h&apos; to &apos;Util.h&apos;" description="Rename resource &apos;stm32f103c6tx_RCC2.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MCAL/inc/stm32f103c6tx_RCC2.h" name="Util.h" stamp="1706614923747" updateReferences="true"/>
+</session>

@@ -1,0 +1,2 @@
+../application_layer/test_uart_poling.c:26:6:USART_Test_1_Debugging_Using_Polling	32	static
+../application_layer/test_uart_poling.c:54:13:clock_init	4	static
