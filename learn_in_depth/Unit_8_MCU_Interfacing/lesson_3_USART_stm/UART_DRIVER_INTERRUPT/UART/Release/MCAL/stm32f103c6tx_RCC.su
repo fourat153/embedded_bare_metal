@@ -1,0 +1,4 @@
+C:/Users/ahmed/Desktop/github/embedded_diploma/embedded_diplom/learn_in_depth/Unit_8_MCU_Interfacing/lesson_3_USART_stm/UART_DRIVER_INTERRUPT/UART/MCAL/stm32f103c6tx_RCC.c:28:8:MCAL_RCC_GetSYS_CLKFreq	0	static
+C:/Users/ahmed/Desktop/github/embedded_diploma/embedded_diplom/learn_in_depth/Unit_8_MCU_Interfacing/lesson_3_USART_stm/UART_DRIVER_INTERRUPT/UART/MCAL/stm32f103c6tx_RCC.c:54:8:MCAL_RCC_GetHCLKFreq	8	static
+C:/Users/ahmed/Desktop/github/embedded_diploma/embedded_diplom/learn_in_depth/Unit_8_MCU_Interfacing/lesson_3_USART_stm/UART_DRIVER_INTERRUPT/UART/MCAL/stm32f103c6tx_RCC.c:62:8:MCAL_RCC_GetPCLK1Freq	8	static
+C:/Users/ahmed/Desktop/github/embedded_diploma/embedded_diplom/learn_in_depth/Unit_8_MCU_Interfacing/lesson_3_USART_stm/UART_DRIVER_INTERRUPT/UART/MCAL/stm32f103c6tx_RCC.c:67:8:MCAL_RCC_GetPCLK2Freq	8	static

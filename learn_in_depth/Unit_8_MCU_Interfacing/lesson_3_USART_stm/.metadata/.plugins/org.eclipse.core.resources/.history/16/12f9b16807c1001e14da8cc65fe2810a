@@ -1,9 +1,0 @@
-../MCAL/stm32f103c6tx_GPIO.c:11:16:Get_CRLH_Position	28
-../MCAL/stm32f103c6tx_GPIO.c:95:6:MCAL_GPIO_Init	10
-../MCAL/stm32f103c6tx_GPIO.c:156:6:MCAL_GPIO_DeInit	6
-../MCAL/stm32f103c6tx_GPIO.c:203:9:MCAL_GPIO_ReadPin	2
-../MCAL/stm32f103c6tx_GPIO.c:224:10:MCAL_GPIO_ReadPort	1
-../MCAL/stm32f103c6tx_GPIO.c:238:6:MCAL_GPIO_WritePin	2
-../MCAL/stm32f103c6tx_GPIO.c:260:6:MCAL_GPIO_WritePort	1
-../MCAL/stm32f103c6tx_GPIO.c:273:6:MCAL_GPIO_TogglePin	1
-../MCAL/stm32f103c6tx_GPIO.c:287:9:MCAL_GPIO_LockPin	2

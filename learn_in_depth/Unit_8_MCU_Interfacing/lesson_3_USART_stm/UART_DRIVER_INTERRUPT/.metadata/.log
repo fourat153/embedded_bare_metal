@@ -1,0 +1,57 @@
+!SESSION 2024-02-03 15:32:43.240 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-03 15:32:56.967
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-03 15:32:56.969
+!MESSAGE Log4j2 initialized with config file C:\Users\ahmed\Desktop\github\embedded_diploma\embedded_diplom\learn_in_depth\Unit_8_MCU_Interfacing\lesson_3_USART_stm\UART_DRIVER_INTERRUPT\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-03 15:32:59.770
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 15:35:49.722
+!MESSAGE Indexed 'UART' (3 sources, 53 headers) in 2.16 sec: 1,950 declarations; 2,831 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 15:42:20.512
+!MESSAGE Indexed 'UART' (3 sources, 53 headers) in 0.318 sec: 1,950 declarations; 2,831 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 15:42:43.930
+!MESSAGE Indexed 'UART' (7 sources, 60 headers) in 0.437 sec: 2,211 declarations; 4,479 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 15:45:30.110
+!MESSAGE Indexed 'UART' (7 sources, 60 headers) in 0.249 sec: 2,211 declarations; 4,479 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 15:47:12.611
+!MESSAGE Indexed 'UART' (7 sources, 60 headers) in 0.245 sec: 2,211 declarations; 4,479 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.03%)
+!SESSION 2024-02-03 19:23:23.459 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-03 19:23:37.275
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-03 19:23:37.277
+!MESSAGE Log4j2 initialized with config file C:\Users\ahmed\Desktop\github\embedded_diploma\embedded_diplom\learn_in_depth\Unit_8_MCU_Interfacing\lesson_3_USART_stm\UART_DRIVER_INTERRUPT\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-03 19:23:44.916
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 19:43:45.596
+!MESSAGE Indexed 'UART' (8 sources, 60 headers) in 0.973 sec: 2,219 declarations; 4,510 references; 4 unresolved inclusions; 1 syntax errors; 14 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 20:25:49.779
+!MESSAGE Indexed 'UART' (3 sources, 54 headers) in 0.392 sec: 1,952 declarations; 2,831 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 20:30:55.920
+!MESSAGE Indexed 'UART' (8 sources, 61 headers) in 0.501 sec: 2,225 declarations; 4,569 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.029%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-03 20:31:05.979
+!MESSAGE Indexed 'UART' (3 sources, 54 headers) in 0.374 sec: 1,952 declarations; 2,831 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)

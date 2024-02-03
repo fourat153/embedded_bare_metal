@@ -1,2 +1,0 @@
-../app layer/test_uart_polling.c:22:6:USART_Test_1_Debugging_Using_Polling	32	static
-../app layer/test_uart_polling.c:51:13:clock_init	4	static
