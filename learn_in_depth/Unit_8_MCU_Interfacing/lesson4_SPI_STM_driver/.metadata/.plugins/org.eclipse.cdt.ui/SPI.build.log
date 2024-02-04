@@ -1,0 +1,35 @@
+19:44:23 **** Incremental Build of configuration Debug for project SPI ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F103C4Tx -DSTM32F1 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdwarf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "C:/Users/ahmed/Desktop/github/embedded_diploma/embedded_diplom/learn_in_depth/Unit_8_MCU_Interfacing/lesson4_SPI_STM_driver/SPI/MCAL/stm32f103xxx_SPI.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F103C4Tx -DSTM32F1 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -gdwarf-2 -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MCAL/stm32f103xxx_SPI.d" -MT"MCAL/stm32f103xxx_SPI.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/stm32f103xxx_SPI.o"
+In file included from ../Src/main.c:21:
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:134:20: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  134 | void MCAL_SPI_Init(SPI_Typedef_t *SPIx, SPI_Config_t *Config);
+      |                    ^~~~~~~~~~~~~
+      |                    GPIO_Typedef_t
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:135:22: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  135 | void MCAL_SPI_DeInit(SPI_Typedef_t *SPIx);
+      |                      ^~~~~~~~~~~~~
+      |                      GPIO_Typedef_t
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:137:29: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  137 | void MCAL_SPI_GPIO_Set_Pins(SPI_Typedef_t *SPIx);
+      |                             ^~~~~~~~~~~~~
+      |                             GPIO_Typedef_t
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:139:25: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  139 | void MCAL_SPI_Send_Data(SPI_Typedef_t *SPIx, uint16_t *pTxBuffer, enum Polling_Mechanism Polling_En);
+      |                         ^~~~~~~~~~~~~
+      |                         GPIO_Typedef_t
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:140:28: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  140 | void MCAL_SPI_Recieve_Data(SPI_Typedef_t *SPIx, uint16_t *pRxBuffer, enum Polling_Mechanism Polling_En);
+      |                            ^~~~~~~~~~~~~
+      |                            GPIO_Typedef_t
+../Src/../../SPI/MCAL/inc/stm32f103xxx_SPI.h:142:21: error: unknown type name 'SPI_Typedef_t'; did you mean 'GPIO_Typedef_t'?
+  142 | void MCAL_SPI_TX_RX(SPI_Typedef_t *SPIx, uint16_t *pTxBuffer, enum Polling_Mechanism Polling_En);
+      |                     ^~~~~~~~~~~~~
+      |                     GPIO_Typedef_t
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+19:44:23 Build Failed. 8 errors, 0 warnings. (took 426ms)
+
