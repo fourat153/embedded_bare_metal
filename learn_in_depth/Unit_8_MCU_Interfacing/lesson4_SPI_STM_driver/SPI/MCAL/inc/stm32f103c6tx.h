@@ -65,6 +65,7 @@
 #define GPIOE_BASE          (APB2_BUS_BASE + 0x1800)
 
 #define USART1_BASE         (APB2_BUS_BASE + 0x3800)
+#define SPI1_BASE         	(APB2_BUS_BASE + 0x3000)
 
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 // Base addresses for APB1 Peripherals
@@ -72,6 +73,8 @@
 
 #define USART2_BASE         (APB1_BUS_BASE + 0x4400)
 #define USART3_BASE         (APB1_BUS_BASE + 0x4800)
+#define SPI2_BASE         	(APB1_BUS_BASE + 0x3800)
+
 
 /* ================================================================ */
 /* ===== Peripheral Register Type Definitions (Structures)========= */
@@ -151,6 +154,25 @@ typedef struct
 	 vuint32 CR3;				/* Control register 3, 						Address offset: 0x14 */
 	 vuint32 GTPR;			/* Guard time and pre-scaler register, 		Address offset: 0x18 */
 }USART_Typedef_t;
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+// Peripheral register: SPI
+//-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+typedef struct
+{
+
+	vuint32 CR1;				/* SPI control register 1, 					Address offset: 0x00 */
+	 vuint32 CR2;				/* SPI control register 2, 					Address offset: 0x04 */
+	 vuint32 SR;				/* SPI status register, 					Address offset: 0x08 */
+	 vuint32 DR;				/* SPI data register, 						Address offset: 0x0C */
+	 vuint32 CRCPR;			/* SPI CRC polynomial register2, 			Address offset: 0x10 */
+	 vuint32 RXCRCR;			/* SPI RX CRC register, 					Address offset: 0x14 */
+	 vuint32 TXCRCR;			/* SPI TX CRC register, 					Address offset: 0x18 */
+	 vuint32 I2SCFGR;			/* SPI I2S configuration register, 			Address offset: 0x1C */
+	 vuint32 I2SPR;			/* SPI I2S pre-scaler register, 			Address offset: 0x20 */
+
+}SPI_Typedef_t;
+
+
 
 /* ================================================================ */
 /* =================== Peripheral Instants  ======================= */
@@ -172,6 +194,9 @@ typedef struct
 #define USART2			((USART_Typedef_t*)USART2_BASE)
 #define USART3			((USART_Typedef_t*)USART3_BASE)
 
+
+#define SPI1			((SPI_Typedef_t *)SPI1_BASE)
+#define SPI2			((SPI_Typedef_t *)SPI2_BASE)
 /* ================================================================ */
 /* =========== Clock Enable/Disable/Reset Macros ================== */
 /* ================================================================ */
@@ -231,6 +256,13 @@ typedef struct
 #define USART2_IRQ		38
 #define USART3_IRQ		39
 
+/*
+ * SPI
+ */
+
+#define SPI1_IRQ		35
+#define SPI2_IRQ		36
+
 //-*-*-*-*-*-*-*-*-*-*-*--*-*-*--*-*-*-
 //NVIC IRQ Enable/Disable Macros
 //-*-*-*-*-*-*-*-*-*-*-*-*-*-*--*-*-*-
@@ -255,6 +287,9 @@ typedef struct
 #define NVIC_IRQ38_USART2_EN()			(NVIC_ISER1 |= 1<<(USART2_IRQ - 32))// USART2
 #define NVIC_IRQ39_USART3_EN()			(NVIC_ISER1 |= 1<<(USART3_IRQ - 32))// USART3
 
+#define NVIC_IRQ35_SPI1_EN()			(NVIC_ISER1 |= 1<<(SPI1_IRQ - 32))	// SPI1
+#define NVIC_IRQ36_SPI2_EN()			(NVIC_ISER1 |= 1<<(SPI2_IRQ - 32))	// SPI2
+
 /* Disable Interrupt Requests */
 
 // We Started From IRQ6 Due To DataSheet
@@ -274,6 +309,9 @@ typedef struct
 #define NVIC_IRQ37_USART1_DI()			(NVIC_ICER1 |= 1<<(USART1_IRQ - 32))// USART1
 #define NVIC_IRQ38_USART2_DI()			(NVIC_ICER1 |= 1<<(USART2_IRQ - 32))// USART2
 #define NVIC_IRQ39_USART3_DI()			(NVIC_ICER1 |= 1<<(USART3_IRQ - 32))// USART3
+
+#define NVIC_IRQ35_SPI1_DI()			(NVIC_ICER1 |= 1<<(SPI1_IRQ - 32))	// SPI1
+#define NVIC_IRQ36_SPI2_DI()			(NVIC_ICER1 |= 1<<(SPI2_IRQ - 32))	// SPI2
 
 /* ================================================================ */
 /* ====================== Generic Macros ========================== */

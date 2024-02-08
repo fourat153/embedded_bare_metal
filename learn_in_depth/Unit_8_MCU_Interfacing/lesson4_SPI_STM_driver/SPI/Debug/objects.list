@@ -7,4 +7,4 @@
 "./Src/syscalls.o"
 "./Src/sysmem.o"
 "./Startup/startup_stm32f103c4tx.o"
-"./app layer/test_uart_polling.o"
+"./app layer/test_spi_polling.o"

@@ -25,3 +25,22 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-02-04 18:32:59.213
 !MESSAGE Indexed 'SPI' (8 sources, 60 headers) in 0.257 sec: 2,219 declarations; 4,567 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.029%)
+!SESSION 2024-02-08 16:39:24.056 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\ahmed\Desktop\github\embedded_diploma\embedded_diplom\learn_in_depth\Unit_8_MCU_Interfacing\lesson4_SPI_STM_driver\SPI\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\ahmed\Desktop\github\embedded_diploma\embedded_diplom\learn_in_depth\Unit_8_MCU_Interfacing\lesson4_SPI_STM_driver\SPI\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-02-08 16:39:31.123
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-02-08 16:39:31.125
+!MESSAGE Log4j2 initialized with config file C:\Users\ahmed\Desktop\github\embedded_diploma\embedded_diplom\learn_in_depth\Unit_8_MCU_Interfacing\lesson4_SPI_STM_driver\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-02-08 16:39:36.032
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-08 16:39:40.582
+!MESSAGE Indexed 'SPI' (8 sources, 61 headers) in 0.707 sec: 2,259 declarations; 4,589 references; 0 unresolved inclusions; 1 syntax errors; 8 unresolved names (0.12%)

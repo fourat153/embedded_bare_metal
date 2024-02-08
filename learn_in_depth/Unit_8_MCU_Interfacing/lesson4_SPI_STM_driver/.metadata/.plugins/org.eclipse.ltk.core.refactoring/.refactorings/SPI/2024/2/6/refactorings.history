@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SPI/app layer/test_uart_polling.c&apos; to &apos;test_spi_polling.c&apos;" description="Rename resource &apos;test_uart_polling.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app layer/test_uart_polling.c" name="test_spi_polling.c" stamp="1707408707629" updateReferences="true"/>
+</session>
