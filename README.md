@@ -1,4 +1,4 @@
-# Embedded Systems Online Diploma
+# Embedded Systems
 
 
 ---
